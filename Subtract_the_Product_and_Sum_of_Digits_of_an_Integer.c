@@ -1,16 +1,15 @@
- #include<stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n,i,r,sum=0,pro=1;
+    int i,n,r=0,m=0,j=1;
     scanf("%d",&n);
     while(n!=0)
     {
-        r=n%10;
-        sum=sum+r;
-        pro=pro*r;
-        n=n/10;
+        m=n%10;
+        r=r+m;
+        j=j*m;
+        n/=10;
+        
     }
-    int a;
-    a=(pro-sum);
-    printf("%d",a);
+    printf("%d",(j-r));
 }
